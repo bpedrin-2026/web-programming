@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Functions</title>
+        
+        <script>
+            // alert("Hello, from functions.html");
+
+            // Functions
+            function sayHello(){
+                console.log("Hello");
+            }
+
+            sayHello();
+            sayHello();
+
+            // Parameters
+            function greetUser(userName){
+                let str = "Hello "+ userName;
+                console.log(str);
+            }
+
+            greetUser(prompt("What's your name?"));
+            greetUser("Anderson");
+
+            function getFullName(firstName, lastName){
+                const fullName = firstName + " " + lastName;
+                alert(fullName);
+            }
+
+            // debugger;
+            getFullName(prompt("What is your first name?"), prompt("What is your last name?"));
+            getFullName("Evel", "Knievel");
+            
+            // Return Values
+            function getTotalPrice(price){
+                const totalPrice = price * 1.07;
+                return totalPrice;
+            }
+
+            const total = getTotalPrice(100);
+            alert(total);
+
+        </script>
+        <!-- <script src="test.js"></script> -->
+
+    </head>
+
+    <body>
+        <h1 onclick="alert('Hello, from the H1!');">Functions</h1>
+    </body>
+
+</html>
