@@ -76,7 +76,44 @@ Submit           Create a submit button (an input tag with a <b>type</b> attribu
        </pre>
        <div class="answer">
           <form id="frmSurvey" action="https://www.webcoder.club/form-handler" method="POST">
-            Replace this sentence with your HTML code for the form.         
+
+            <label for="">First Name</label>
+            <input type="text" name="firstName" id="">  
+            <br><br>
+
+            <label for="">Favorite Color</label>  
+            <select name="color" id="">
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="blue">Blue</option>
+                <option value="other">Other</option>
+            </select>
+
+            <br><br>
+
+            <label for="">Favorite Meal</label>
+            <input type="radio" name="meal" id="" value="breakfast">
+            <label for="">Breakfast</label>
+            <input type="radio" name="meal" id="" value="lunch">
+            <label for="">Lunch</label>
+            <input type="radio" name="meal" id="" value="dinner">
+            <label for="">Dinner</label>
+
+            <br><br>
+
+            <label for="">Places Visited</label>
+            <input type="checkbox" name="visited" id="" value="Europe">
+            <label for="">Europe</label>
+            <input type="checkbox" name="visited" id="" value="Africa">
+            <label for="">Africa</label>
+            <input type="checkbox" name="visited" id="" value="Asia">
+            <label for="">Asia</label>
+            <br><br>
+
+            <label for="">Favorite Quote</label>
+            <textarea name="quote" id="" rows="10" cols="50"></textarea>
+            <br>
+            <input type="submit" value="Submit" style="width: 100px; height: 25px;">
           </form>
        </div>
        <footer>

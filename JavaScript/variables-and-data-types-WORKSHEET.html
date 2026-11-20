@@ -26,7 +26,7 @@
                 Find a reference that lists all the <b>keywords</b> in the JavaScript programming language.
             </p>
             <div class="answer">
-                Put a hyperlink here, that links to the keyword reference.               
+                <a href="https://htmlcheatsheet.com/js/">JavaScript CheatSheet</a>               
             </div>
 
             <b>Question 2</b>
@@ -34,7 +34,7 @@
                 True or false: keywords and variable names are NOT case sensitive.
             </p>
             <div class="answer">
-                Replace this sentence with your solution to the above question/problem.
+                False
             </div>
 
             <b>Question 3</b>
@@ -42,7 +42,11 @@
                 There are some rules for how you can name variables in JavaScript. What are they?
             </p>
             <div class="answer">
-                Replace this text with the solution to the above question/problem.
+                <ul>
+                    <li>They cannot start with a number.</li>
+                    <li>They cannot have spaces.</li>
+                    <li>They are case sensitive.</li>
+                </ul>
             </div>
 
             <b>Question 4</b>
@@ -50,7 +54,7 @@
                 What is 'camelCase'?
             </p>
             <div class="answer">
-                Replace this text with the solution to the above question/problem.
+                typingInLowerCaseLettersButCapitalizingEachNewWordWithNoSpaces
             </div>      
             
             <b>Question 5</b>
@@ -58,7 +62,41 @@
                 What are ALL the different <b>data types</b> in JavaScript (note that there are some that we did not discuss in class)? 
             </p>
             <div class="answer">
-                Replace this text with the solution to the above question/problem.
+                <table border="1">
+                    <thead>
+                        <th>Primitive Data Type</th>
+                        <th>Non-Primitive Data Type</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Number</td>
+                            <td>Object</td>
+                        </tr>
+                        <tr>
+                            <td>String</td>
+                            <td>Arrays</td>
+                        </tr>
+                        <tr>
+                            <td>Boolean</td>
+                            <td>Function</td>
+                        </tr>
+                        <tr>
+                            <td>Null</td>
+                            <td>Date Object</td>
+                        </tr>
+                        <tr>
+                            <td>Undefined</td>
+                            <td>Regular Expression</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Symbol</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">BigInt</td>
+                        </tr>
+
+                    </tbody>
+                </table>
             </div>
             
             <b>Question 6</b>
@@ -66,7 +104,7 @@
                 What is a <b>boolean</b> data type?
             </p>
             <div class="answer">
-                Replace this text with the solution to the above question/problem.
+                This is a data type that is either True or False.
             </div>
             
             <b>Question 7</b>
@@ -77,7 +115,8 @@
                 For example: <b>var lastName = Jones;</b>
             </p>
             <div class="answer">
-                Replace this text with the solution to the above question/problem.
+                If you forget the quotation marks, JS will think you are trying to reference a variable and it will look for it.<br>
+                Not finding it, the code will crash.
             </div>
 
             <b>Question 8</b>
@@ -85,7 +124,7 @@
                 What character is used to end a <b>statement</b> in JavaScript?
             </p>
             <div class="answer">
-                Replace this text with the solution to the above question/problem.
+                The semicolon (;).
             </div>
 
             <b>Question 9</b>
@@ -93,7 +132,7 @@
                 If you declare a variable, but do not initialize it, what value will the variable store?
             </p>
             <div class="answer">
-                Replace this text with the solution to the above question/problem.
+                Null
             </div>
             
             <b>Question 10</b>
@@ -109,7 +148,7 @@ const sum = firstTestScore + secondTestScore;
 console.log(sum);
 console.log(typeof sum);</code></pre>
             <div class="answer">
-                Replace this text with the solution to the above question/problem.
+                The first console log would produce: 9888 as an output, and the second output would tell us that the type is string.
             </div>
 
             <b>Question 11</b>
@@ -123,7 +162,8 @@ const total = 99;
 console.log("total");
 console.log(total);</code></pre>
             <div class="answer">
-                Replace this text with the solution to the above question/problem.
+                The first console log would produce: total<br>
+                The second would produce: 99
             </div>
 
             <b>Question 12</b>
@@ -134,7 +174,7 @@ console.log(total);</code></pre>
 const score1 = 75;
 const score2 = "75";</code></pre>
             <div class="answer">
-                Replace this text with the solution to the above question/problem.
+                The first one is a number and the second is a string.
             </div>
 
 			<b>Question 13</b>
@@ -145,7 +185,7 @@ const score2 = "75";</code></pre>
 const score = 0;
 score = prompt("Enter a score");</code></pre>
             <div class="answer">
-                Replace this text with the solution to the above question/problem.
+                You have declared the variable as a constant, and that can not be changed later.
             </div>			
 
             <h1>Coding Problems</h1>
@@ -182,7 +222,7 @@ score = prompt("Enter a score");</code></pre>
             // Now save this page in VSCode, and then open it in your browser.
             // Press F12 to open the developer tools, and click on the 'console' tab.
             // You should see the value of myAge written to the console log.
-            const myAge = 22;
+            const myAge = 52;
             console.log(myAge);
 
 
@@ -192,31 +232,36 @@ score = prompt("Enter a score");</code></pre>
             // Then 'log' myVar to the console.
             // Save your code, then run it in the browser, with the console open and note what 
             // the value of a variable that has never been initialized.
-
+            let myVar;
+            console.log(myVar);
+            // undefined
 
 
             console.log("Problem 3");
             // Declare a variable with the name of myName and initialize it to your first name.
             // Hint: Make sure to put quotes around your name.
             // Then log myName.
-
+            const myName = "Benjamin Pedrin";
+            console.log(myName);
 
 
             console.log("Problem 4");
             // Declare a variable with the name of myBool and initialize it to true.
             // Then log myBool.
-
+            const myBool = true;
+            console.log(myBool);
 
 
             console.log("Problem 5");
             // Use the typeof keyword to log the data type of each variable you declared and initialized in problems 1-4
             // For example: console.log(typeof someVar);
-
+            console.log(typeof myAge, typeof myBool, typeof myName, typeof myVar);
 
 
             console.log("Problem 6");
             // Declare a variable with the name of myResult and initialize it to 
             // a mathematical expression that adds two numbers.
+            const myResult = 5+10
 
 
 
@@ -227,6 +272,11 @@ score = prompt("Enter a score");</code></pre>
             // Note that you have already declared and initialized myName and myAge in a previous step.
             // Then log myTestVar 
             // Then log its data type (by using the typeof operator).
+            const myTestVar = myName + " " + myAge;
+            console.log(myTestVar);
+            console.log(typeof myTestVar);
+
+
 
             </script>
 
