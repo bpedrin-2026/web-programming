@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nested If Statements</title>
+        <script>
+
+            let input = prompt("Are you a vegetarian (y/n)?");
+
+            if(input == "y"){
+                input = prompt("Do you like pickles or olives (p/o)?");
+                if(input == "p"){
+                    alert("Here's your pickle.");
+                }else{
+                    alert("Here are your olives.");
+                }
+            }else if(input == "n"){
+                alert("Here's your meat.");
+            }else{
+                alert("You're an idiot! Follow instructions.");
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+        
+    </body>
+
+</html>
