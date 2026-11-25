@@ -1,0 +1,71 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: darkkhaki;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+header h1 {
+    font-size: 3em;
+    color: midnightblue;
+}
+
+nav {
+    background-color: rgb(235, 235, 201);
+    height: 30px;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    height: 30px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px 0 10px;
+    color: blue;
+}
+
+#content {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+}
+
+main {
+    width: 70%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+aside {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+footer {
+    background-color: darkkhaki;
+    color: midnightblue;
+    font-size: 85%;
+    flex-shrink: 0;
+}
+h1 {
+    color: midnightblue;
+    font-size: 140%;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 12px;
+}
